@@ -43,7 +43,6 @@
 .main {
     grid-area: main;
     margin: 1rem 1rem 1rem  1rem;
-    overflow-y: scroll;
 }
 
 .persona{
@@ -139,5 +138,6 @@
     
     .main{
         margin-left: 5rem;
+        overflow-y: scroll;
     }
 }
