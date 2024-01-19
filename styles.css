@@ -1,0 +1,112 @@
+button {
+    background-color: #0077FF;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 5s linear;
+
+    /*  1. La propiedad que se va a animar (background-color en este caso).
+        2. La duración de la transición (0.3 segundos en este caso).
+        3. La función de tiempo que se utiliza para la transición (ease-out en este caso).
+        4. Retraso. En este caso no la especificamos, pero se puede agregar un tiempo más
+para demorar el inicio de la transición. */
+    }
+button:hover {
+    background-color: rgb(255, 140, 0);}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    transition: all 3s;
+    transform: rotate(0deg) scale(1.5);
+    translate: 200px 200px;
+}
+.box:hover {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    transform: rotate(45deg);
+}
+
+.img {
+    transform: scale(0.5);
+}
+
+.parrafo{
+    transform: rotate(180deg) ;
+}
+
+
+
+.boxes {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    position: relative;
+    animation-name: example;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    }
+    @keyframes example {
+    from { left: 0px; }
+    to { left: 200px; }
+    /* La animación moverá la caja de 0px a 200px a la izquierda */
+    }
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+.text {
+    font-size: 3em;
+    animation: move 2s infinite;
+    animation-direction: alternate;
+}
+@keyframes move {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(200px);
+    }
+}
+
+
+
+/* CSS */
+.contenedor {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto {
+    position: absolute;
+    font-size: 48px;
+    animation: move 4s ease infinite;
+}
+@keyframes move {
+    0% {
+    transform: translateX(0);
+    }
+    25% {
+    transform: translateX(100px);
+    }
+    50% {
+    transform: translateX(0);
+    transform: rotate(180deg)
+    ;
+    } 75% {
+    transform: translateX(-100px);
+    }
+    100% {
+    transform: translateX(0);
+    }
+}
