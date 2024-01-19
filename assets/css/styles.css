@@ -8,6 +8,10 @@
 
 }
 
+.sombra{
+    text-shadow: 1px 1px 2px #808080;
+}
+
 .grid-container {
     display: grid;
     grid-template-areas: 
@@ -42,29 +46,53 @@
     overflow-y: scroll;
 }
 
+.persona{
+    transition: all 1s ease;
+
+}
+.persona:hover{
+    filter: grayscale(1);
+    transition: all 0.8s ease;
+}
+
+.historia {
+    border-radius: 5px;
+}
+
+.card {
+    border-width: 0 ;
+}
+
 .grid-group {
     display: grid;
     grid-template-columns: 50% 50%; 
-    gap: 10px;
+    gap: 20px;
     justify-items: center;
     align-items: center;
 }
 
 .grid-item{
-    width: 2rem;
-    height: 3rem;
+    width: 5rem;
+    height: 4rem;
 }
+
 .row{
     display: flex;
     flex-wrap: wrap;
+}
+
+.zoom{
+    border: 5px;
+    transition: transform .5s;
+}
+.zoom:hover{
+    transform: scale(1.5);
 }
 
 .precios{
     margin-top: 1rem;
 }
     
-
-
 .footer {
     grid-area: footer;
     text-align: center;
